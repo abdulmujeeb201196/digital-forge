@@ -1,42 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { 
-  Globe, 
-  Search, 
-  Users, 
-  TrendingDown, 
-  Cog, 
-  HelpCircle, 
-  Puzzle, 
-  Smartphone,
-  Rocket,
-  Target,
-  Zap,
-  CheckCircle,
-  Gift,
-  Percent,
-  Mail,
-  Phone,
-  MapPin,
-  ExternalLink,
-  Monitor,
-  ShoppingCart,
-  BarChart3,
-  MessageSquare,
-  MailOpen,
-  AppWindow,
-  Gamepad2,
-  Link2,
-  FileText,
-  Code,
-  Headphones,
-  Settings
-} from "lucide-react";
-
+import { Globe, Search, Users, TrendingDown, Cog, HelpCircle, Puzzle, Smartphone, Rocket, Target, Zap, CheckCircle, Gift, Percent, Mail, Phone, MapPin, ExternalLink, Monitor, ShoppingCart, BarChart3, MessageSquare, MailOpen, AppWindow, Gamepad2, Link2, FileText, Code, Headphones, Settings } from "lucide-react";
 const Promo = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative py-20 px-4 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
         <div className="container mx-auto text-center">
@@ -193,7 +160,7 @@ const Promo = () => {
 
             <Card className="bg-card">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-primary mb-6">Custom Software Development</h3>
+                <h3 className="text-2xl font-bold text-primary mb-6">Software Development</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3">
                     <AppWindow className="h-5 w-5 text-primary" />
@@ -201,7 +168,7 @@ const Promo = () => {
                   </li>
                   <li className="flex items-center gap-3">
                     <Smartphone className="h-5 w-5 text-primary" />
-                    <span className="text-foreground">Mobile Apps (iOS, Android, Cross-Platform)</span>
+                    <span className="text-foreground">Mobile Apps (Cross-Platform)</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <Monitor className="h-5 w-5 text-primary" />
@@ -264,15 +231,15 @@ const Promo = () => {
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-primary" />
-                    <span className="text-foreground">Fully functional, scalable application</span>
+                    <span className="text-foreground">Fully Functional, Scalable Application</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-primary" />
-                    <span className="text-foreground">Clean, documented code & secure hosting</span>
+                    <span className="text-foreground">Clean, Documented Code </span>
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-primary" />
-                    <span className="text-foreground">User training & technical documentation</span>
+                    <span className="text-foreground">Training & Technical Documentation</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-primary" />
@@ -280,7 +247,7 @@ const Promo = () => {
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-primary" />
-                    <span className="text-foreground">Post-launch support & maintenance plans</span>
+                    <span className="text-foreground">Post-launch Support & Maintenance </span>
                   </li>
                 </ul>
               </CardContent>
@@ -404,7 +371,7 @@ const Promo = () => {
       </section>
 
       {/* Footer Section */}
-      <footer className="py-12 px-4 bg-foreground text-background">
+      <footer className="py-12 px-4 text-background bg-primary">
         <div className="container mx-auto max-w-4xl">
           <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-3">
@@ -432,8 +399,6 @@ const Promo = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Promo;
