@@ -368,7 +368,7 @@ Once you share your requirements, we'll create a custom-tailored plan designed s
                 </li>
                 <li className="flex items-center gap-4">
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold shrink-0">3</span>
-                  <span className="text-foreground text-lg whitespace-nowrap">Website/Social Links/Logo</span>
+                  <span className="text-foreground text-lg whitespace-nowrap">Website URL/Social Media Links/Company Logo</span>
                 </li>
                 <li className="flex items-center gap-4">
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold shrink-0">4</span>
