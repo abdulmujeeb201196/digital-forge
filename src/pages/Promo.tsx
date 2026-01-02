@@ -355,20 +355,24 @@ Once you share your requirements, we'll create a custom-tailored plan designed s
           <Card className="bg-muted/30 border-primary/20">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-center text-foreground mb-6">
-                TELL US 3 THINGS TO BEGIN:
+                TELL US 4 THINGS TO BEGIN:
               </h3>
-              <ol className="space-y-4 max-w-md mx-auto">
+              <ol className="space-y-4 max-w-lg mx-auto">
                 <li className="flex items-center gap-4">
-                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold">1</span>
-                  <span className="text-foreground text-lg">Business Type</span>
+                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold shrink-0">1</span>
+                  <span className="text-foreground text-lg whitespace-nowrap">Business Name & Category</span>
                 </li>
                 <li className="flex items-center gap-4">
-                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold">2</span>
-                  <span className="text-foreground text-lg">Your website/social links (if any)</span>
+                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold shrink-0">2</span>
+                  <span className="text-foreground text-lg whitespace-nowrap">Services You Required</span>
                 </li>
                 <li className="flex items-center gap-4">
-                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold">3</span>
-                  <span className="text-foreground text-lg">Your #1 goal right now</span>
+                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold shrink-0">3</span>
+                  <span className="text-foreground text-lg whitespace-nowrap">Website/Social Links/Logo</span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold shrink-0">4</span>
+                  <span className="text-foreground text-lg whitespace-nowrap">Goal/Target to Achieve</span>
                 </li>
               </ol>
               <p className="text-center text-muted-foreground mt-6">
