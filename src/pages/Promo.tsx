@@ -49,7 +49,7 @@ const Promo = () => {
       </section>
 
       {/* Challenges Section */}
-      <section className="px-4 py-[24px] bg-[#a1a1a1]/[0.31]">
+      <section className="py-[24px] bg-[#a1a1a1]/[0.31] px-[16px]">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
             Is Your Business Facing These Challenges?
@@ -116,46 +116,10 @@ const Promo = () => {
       </section>
 
       {/* Core Solutions Section */}
-      <section className="px-4 py-[24px]">
-        <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
-            Our Core Solutions
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <Card className="border-primary/30 bg-gradient-to-br from-primary/5 to-transparent">
-              <CardContent className="p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-3 bg-primary/10 rounded-full">
-                    <Rocket className="h-8 w-8 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground">Digital Marketing Solution</h3>
-                </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  We build, optimize, and manage your digital presence using AI-driven strategies to attract, engage, and convert your audience—so you rank higher, look premium, and grow consistently.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-primary/30 bg-gradient-to-br from-primary/5 to-transparent">
-              <CardContent className="p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-3 bg-primary/10 rounded-full">
-                    <Zap className="h-8 w-8 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground">Custom Software Solution</h3>
-                </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  We design and develop tailored web, mobile, desktop, and game applications that automate, streamline, and scale your business—so you work smarter, faster, and ahead of the competition.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Services Section */}
-      <section className="px-4 py-[24px] bg-[#a1a1a1]/30">
+      <section className="py-[24px] bg-[#a1a1a1]/30 px-[16px]">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
             Our Services
