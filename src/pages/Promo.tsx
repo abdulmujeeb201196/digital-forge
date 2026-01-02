@@ -123,7 +123,7 @@ const Promo = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 px-4 bg-muted/30">
+      <section className="px-4 bg-muted/30 py-[24px]">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
             Our Services
@@ -190,7 +190,7 @@ const Promo = () => {
       </section>
 
       {/* Deliverables Section */}
-      <section className="py-16 px-4">
+      <section className="px-4 py-[24px]">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
             Deliverables
@@ -257,13 +257,11 @@ const Promo = () => {
       </section>
 
       {/* Limited Time Offer Section */}
-      <section className="py-16 px-4 bg-gradient-to-br from-primary/20 via-primary/10 to-secondary/20">
+      <section className="px-4 bg-gradient-to-br from-primary/20 via-primary/10 to-secondary/20 py-[24px]">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <span className="text-4xl mb-4 block">📢</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              LIMITED-TIME LAUNCH OFFER
-            </h2>
+            
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">📢 LIMITED-TIME LAUNCH OFFER</h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
@@ -312,16 +310,15 @@ const Promo = () => {
       </section>
 
       {/* Start Your Growth Journey Section */}
-      <section className="py-16 px-4">
+      <section className="px-4 py-[24px]">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-6">
             Start Your Growth Journey
           </h2>
-          <p className="text-center text-muted-foreground text-lg mb-8">
-            Your business is unique. Your solution should be too. We don't believe in one-size-fits-all. 
-            Once you share your requirements, we'll create a custom-tailored plan designed specifically 
-            for your goals, challenges, and vision.
-          </p>
+          <p className="text-center text-muted-foreground text-lg mb-8">Your business is unique. 
+Your solution should be too. 
+We don't believe in one-size-fits-all. 
+Once you share your requirements, we'll create a custom-tailored plan designed specifically for your goals, challenges, and vision.</p>
 
           <Card className="bg-muted/30 border-primary/20">
             <CardContent className="p-8">
@@ -356,7 +353,7 @@ const Promo = () => {
       </section>
 
       {/* Why Partner With Us Section */}
-      <section className="py-16 px-4 bg-muted/30">
+      <section className="px-4 bg-muted/30 py-[24px]">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Why Partner With Us?
