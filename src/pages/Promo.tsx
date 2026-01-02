@@ -1,9 +1,35 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { Globe, Search, Users, TrendingDown, Cog, HelpCircle, Puzzle, Smartphone, Rocket, Target, Zap, CheckCircle, Gift, Percent, Mail, Phone, MapPin, ExternalLink, Monitor, ShoppingCart, BarChart3, MessageSquare, MailOpen, AppWindow, Gamepad2, Link2, FileText, Code, Headphones, Settings } from "lucide-react";
+import { Globe, Search, Users, TrendingDown, Cog, HelpCircle, Puzzle, Smartphone, Rocket, Target, Zap, CheckCircle, Gift, Percent, Mail, Phone, MapPin, ExternalLink, Monitor, ShoppingCart, BarChart3, MessageSquare, MailOpen, AppWindow, Gamepad2, Link2, FileText, Code, Headphones, Settings, Download } from "lucide-react";
+import { useRef } from "react";
+import html2pdf from "html2pdf.js";
+
 const Promo = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  const handleDownloadPDF = () => {
+    if (contentRef.current) {
+      const opt = {
+        margin: 0,
+        filename: 'Digital_Next_Path_Services.pdf',
+        image: { type: 'jpeg' as const, quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'in' as const, format: 'a4', orientation: 'portrait' as const }
+      };
+      html2pdf().set(opt).from(contentRef.current).save();
+    }
+  };
   return <div className="min-h-screen bg-background">
+      {/* PDF Download Button - Fixed */}
+      <div className="fixed top-4 right-4 z-50 print:hidden">
+        <Button onClick={handleDownloadPDF} size="lg" className="shadow-lg">
+          <Download className="h-5 w-5 mr-2" />
+          Download PDF
+        </Button>
+      </div>
+
+      <div ref={contentRef}>
       {/* Hero Section */}
       <section className="relative px-4 bg-gradient-to-br from-primary/10 via-background to-secondary/10 py-[40px] pt-[40px] pb-px">
         <div className="container mx-auto text-center">
@@ -370,32 +396,40 @@ Once you share your requirements, we'll create a custom-tailored plan designed s
       {/* Footer Section */}
       <footer className="py-12 px-4 text-background bg-primary">
         <div className="container mx-auto max-w-4xl">
-          <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
-            <div className="flex items-center justify-center md:justify-start gap-3">
-              <Mail className="h-5 w-5" />
-              <a href="mailto:connect@digitalnextpath.com" className="hover:text-primary transition-colors">
-                connect@digitalnextpath.com
-              </a>
+          <div className="flex flex-col md:flex-row justify-between items-start gap-8">
+            {/* Left Side - Phone and Location */}
+            <div className="flex flex-col gap-4">
+              <div className="flex items-center gap-3">
+                <Phone className="h-5 w-5" />
+                <a href="tel:+923390003467" className="hover:opacity-80 transition-opacity">
+                  +92-339-0003467
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <MapPin className="h-5 w-5" />
+                <span>Islamabad</span>
+              </div>
             </div>
-            <div className="flex items-center justify-center gap-3">
-              <ExternalLink className="h-5 w-5" />
-              <a href="https://www.digitalnextpath.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                www.digitalnextpath.com
-              </a>
+
+            {/* Right Side - Email and Website */}
+            <div className="flex flex-col gap-4 md:text-right">
+              <div className="flex items-center gap-3 md:flex-row-reverse">
+                <Mail className="h-5 w-5" />
+                <a href="mailto:connect@digitalnextpath.com" className="hover:opacity-80 transition-opacity">
+                  connect@digitalnextpath.com
+                </a>
+              </div>
+              <div className="flex items-center gap-3 md:flex-row-reverse">
+                <ExternalLink className="h-5 w-5" />
+                <a href="https://www.digitalnextpath.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                  www.digitalnextpath.com
+                </a>
+              </div>
             </div>
-            <div className="flex items-center justify-center md:justify-end gap-3">
-              <Phone className="h-5 w-5" />
-              <a href="tel:+923390003467" className="hover:text-primary transition-colors">
-                +92-339-0003467
-              </a>
-            </div>
-          </div>
-          <div className="flex items-center justify-center gap-2 mt-6 pt-6 border-t border-background/20">
-            <MapPin className="h-5 w-5" />
-            <span>Islamabad</span>
           </div>
         </div>
       </footer>
+      </div>
     </div>;
 };
 export default Promo;
