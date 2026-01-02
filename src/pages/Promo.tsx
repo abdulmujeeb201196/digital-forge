@@ -360,7 +360,7 @@ Once you share your requirements, we'll create a custom-tailored plan designed s
               <ol className="space-y-4 max-w-md mx-auto">
                 <li className="flex items-center gap-4">
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold">1</span>
-                  <span className="text-foreground text-lg">Your business type</span>
+                  <span className="text-foreground text-lg">Business Type</span>
                 </li>
                 <li className="flex items-center gap-4">
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold">2</span>
