@@ -357,7 +357,7 @@ Once you share your requirements, we'll create a custom-tailored plan designed s
               <h3 className="text-2xl font-bold text-center text-foreground mb-6">
                 TELL US 4 THINGS TO BEGIN:
               </h3>
-              <ol className="space-y-4 max-w-lg mx-auto">
+              <ol className="space-y-4 w-fit mx-auto">
                 <li className="flex items-center gap-4">
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold shrink-0">1</span>
                   <span className="text-foreground text-lg whitespace-nowrap">Business Name & Category</span>
@@ -368,7 +368,7 @@ Once you share your requirements, we'll create a custom-tailored plan designed s
                 </li>
                 <li className="flex items-center gap-4">
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold shrink-0">3</span>
-                  <span className="text-foreground text-lg whitespace-nowrap">Website URL/Social Media Links/Company Logo</span>
+                  <span className="text-foreground text-lg whitespace-nowrap">Website URL/Social Media Links</span>
                 </li>
                 <li className="flex items-center gap-4">
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold shrink-0">4</span>
