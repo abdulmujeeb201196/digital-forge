@@ -4,18 +4,26 @@ import { Link } from "react-router-dom";
 import { Globe, Search, Users, TrendingDown, Cog, HelpCircle, Puzzle, Smartphone, Rocket, Target, Zap, CheckCircle, Gift, Percent, Mail, Phone, MapPin, ExternalLink, Monitor, ShoppingCart, BarChart3, MessageSquare, MailOpen, AppWindow, Gamepad2, Link2, FileText, Code, Headphones, Settings, Download } from "lucide-react";
 import { useRef } from "react";
 import html2pdf from "html2pdf.js";
-
 const Promo = () => {
   const contentRef = useRef<HTMLDivElement>(null);
-
   const handleDownloadPDF = () => {
     if (contentRef.current) {
       const opt = {
         margin: 0,
         filename: 'Digital_Next_Path_Services.pdf',
-        image: { type: 'jpeg' as const, quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true },
-        jsPDF: { unit: 'in' as const, format: 'a4', orientation: 'portrait' as const }
+        image: {
+          type: 'jpeg' as const,
+          quality: 0.98
+        },
+        html2canvas: {
+          scale: 2,
+          useCORS: true
+        },
+        jsPDF: {
+          unit: 'in' as const,
+          format: 'a4',
+          orientation: 'portrait' as const
+        }
       };
       html2pdf().set(opt).from(contentRef.current).save();
     }
@@ -36,14 +44,12 @@ const Promo = () => {
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4">
             DIGITAL NEXT PATH
           </h1>
-          <p className="text-xl md:text-2xl text-primary font-semibold mb-8">
-            Let's get digital, let's grow together
-          </p>
+          <p className="text-xl md:text-2xl text-primary font-semibold mb-8">Let's Get Dgital, Let's Grow Together</p>
         </div>
       </section>
 
       {/* Challenges Section */}
-      <section className="px-4 bg-muted/30 py-[24px]">
+      <section className="px-4 py-[24px] bg-[#a1a1a1]/[0.31]">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
             Is Your Business Facing These Challenges?
@@ -149,7 +155,7 @@ const Promo = () => {
       </section>
 
       {/* Services Section */}
-      <section className="px-4 bg-muted/30 py-[24px]">
+      <section className="px-4 py-[24px] bg-[#a1a1a1]/30">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
             Our Services
@@ -379,7 +385,7 @@ Once you share your requirements, we'll create a custom-tailored plan designed s
       </section>
 
       {/* Why Partner With Us Section */}
-      <section className="px-4 bg-muted/30 py-[24px]">
+      <section className="px-4 py-[24px] bg-[#a1a1a1]/[0.32]">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Why Partner With Us?
