@@ -352,7 +352,7 @@ Your solution should be too. 
 We don't believe in one-size-fits-all. 
 Once you share your requirements, we'll create a custom-tailored plan designed specifically for your goals, challenges, and vision.</p>
 
-          <Card className="bg-muted/30 border-primary/20 max-w-xl mx-auto">
+          <Card className="bg-muted/30 border-primary/20 max-w-md mx-auto">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-center text-foreground mb-6">
                 TELL US 4 THINGS TO BEGIN:
