@@ -5,7 +5,7 @@ import { Globe, Search, Users, TrendingDown, Cog, HelpCircle, Puzzle, Smartphone
 const Promo = () => {
   return <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
+      <section className="relative px-4 bg-gradient-to-br from-primary/10 via-background to-secondary/10 py-[40px] pt-[40px] pb-px">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4">
             DIGITAL NEXT PATH
@@ -17,7 +17,7 @@ const Promo = () => {
       </section>
 
       {/* Challenges Section */}
-      <section className="py-16 px-4 bg-muted/30">
+      <section className="px-4 bg-muted/30 py-[24px]">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
             Is Your Business Facing These Challenges?
@@ -84,7 +84,7 @@ const Promo = () => {
       </section>
 
       {/* Core Solutions Section */}
-      <section className="py-16 px-4">
+      <section className="px-4 py-[24px]">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
             Our Core Solutions
