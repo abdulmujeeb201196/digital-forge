@@ -328,7 +328,7 @@ Once you share your requirements, we'll create a custom-tailored plan designed s
                 </li>
                 <li className="flex items-center gap-4">
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold shrink-0">2</span>
-                  <span className="text-foreground text-lg whitespace-nowrap">Services You Required</span>
+                  <span className="text-foreground text-lg whitespace-nowrap">Services You Require</span>
                 </li>
                 <li className="flex items-center gap-4">
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold shrink-0">3</span>
